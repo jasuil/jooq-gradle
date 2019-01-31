@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f2c41b5e-28ff-4b3a-a9b2-e32df11de889" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.example.jooq.JooqApplicationTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/com.example.jooq.JooqApplicationTests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.example.jooq.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/com.example.jooq.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.example.jooq.JooqApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-com.example.jooq.JooqApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/InformationSchema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/InformationSchema.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/Keys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/Keys.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/Tables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/Tables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/Catalogs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/Catalogs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/Collations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/Collations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/ColumnPrivileges.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/ColumnPrivileges.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/Columns.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/Columns.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/Constraints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/Constraints.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/CrossReferences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/CrossReferences.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/Domains.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/Domains.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/FunctionAliases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/FunctionAliases.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/FunctionColumns.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/FunctionColumns.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/Help.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/Help.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/InDoubt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/InDoubt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/Indexes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/Indexes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/KeyColumnUsage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/KeyColumnUsage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/Locks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/Locks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/QueryStatistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/QueryStatistics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/ReferentialConstraints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/ReferentialConstraints.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/Rights.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/Rights.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/Roles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/Roles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/Schemata.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/Schemata.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/Sequences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/Sequences.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/SessionState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/SessionState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/Sessions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/Sessions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/Settings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/Synonyms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/Synonyms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/TableConstraints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/TableConstraints.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/TablePrivileges.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/TablePrivileges.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/TableTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/TableTypes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/Tables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/Tables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/Triggers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/Triggers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/TypeInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/TypeInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/Views.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/Views.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/Catalogs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/Catalogs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/Collations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/Collations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/ColumnPrivileges.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/ColumnPrivileges.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/Columns.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/Columns.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/Constraints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/Constraints.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/CrossReferences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/CrossReferences.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/Domains.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/Domains.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/FunctionAliases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/FunctionAliases.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/FunctionColumns.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/FunctionColumns.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/Help.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/Help.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/InDoubt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/InDoubt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/Indexes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/Indexes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/KeyColumnUsage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/KeyColumnUsage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/Locks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/Locks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/QueryStatistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/QueryStatistics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/ReferentialConstraints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/ReferentialConstraints.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/Rights.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/Rights.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/Roles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/Roles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/Schemata.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/Schemata.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/Sequences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/Sequences.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/SessionState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/SessionState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/Sessions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/Sessions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/Settings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/Synonyms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/Synonyms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/TableConstraints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/TableConstraints.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/TablePrivileges.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/TablePrivileges.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/TableTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/TableTypes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/Tables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/Tables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/Triggers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/Triggers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/TypeInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/TypeInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/Views.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/pojos/Views.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/CatalogsRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/CatalogsRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/CollationsRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/CollationsRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/ColumnPrivilegesRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/ColumnPrivilegesRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/ColumnsRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/ColumnsRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/ConstantsRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/ConstantsRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/ConstraintsRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/ConstraintsRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/CrossReferencesRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/CrossReferencesRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/DomainsRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/DomainsRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/FunctionAliasesRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/FunctionAliasesRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/FunctionColumnsRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/FunctionColumnsRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/HelpRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/HelpRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/InDoubtRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/InDoubtRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/IndexesRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/IndexesRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/KeyColumnUsageRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/KeyColumnUsageRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/LocksRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/LocksRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/QueryStatisticsRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/QueryStatisticsRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/ReferentialConstraintsRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/ReferentialConstraintsRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/RightsRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/RightsRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/RolesRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/RolesRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/SchemataRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/SchemataRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/SequencesRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/SequencesRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/SessionStateRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/SessionStateRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/SessionsRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/SessionsRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/SettingsRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/SettingsRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/SynonymsRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/SynonymsRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/TableConstraintsRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/TableConstraintsRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/TablePrivilegesRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/TablePrivilegesRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/TableTypesRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/TableTypesRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/TablesRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/TablesRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/TriggersRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/TriggersRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/TypeInfoRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/TypeInfoRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/UsersRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/UsersRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/ViewsRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/information_schema/tables/records/ViewsRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/public_/Keys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/public_/Keys.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/public_/Public.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/public_/Public.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/public_/Tables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/public_/Tables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/public_/tables/Jasuil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/public_/tables/pojos/Jasuil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jooq/db/public_/tables/records/JasuilRecord.java" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.gradle/" />
+    <ignored path="$PROJECT_DIR$/build/" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/jooq_gradle$JooqApplicationTests.ic" NAME="JooqApplicationTests Coverage Results" MODIFIED="1546868807241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.example.jooq.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="jooq-gradle" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="jooq-gradle" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="jooq-gradle" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="jooq-gradle" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="jooq-gradle" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="jooq-gradle" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="jooq-gradle" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/jooq/JooqApplicationTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1288">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/jooq/exceptions/ExceptionTranslator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/jooq/exceptions/ExceptionController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#664#665#0" expanded="true" />
+                <element signature="e#694#695#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/jooq/JooqApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/jooq/web/RestControll.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/example/jooq/exceptions/exce.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/jooq/web/controll.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/jooq/web/RestControll.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/jooq/exceptions/exceptionController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/jooq/exceptions/ExceptionController.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="348" />
+    <option name="y" value="17" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546958197849" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.JooqApplication">
+    <configuration name="JooqApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.jooq.JooqApplication" />
+      <module name="com.example.jooq-gradle.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.jooq.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="jooq-gradle [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootRun" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="jooq-gradle [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="jooq-gradle [classes]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="classes" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="JooqApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.example.jooq-gradle.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.jooq.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.jooq" />
+      <option name="MAIN_CLASS_NAME" value="com.example.jooq.JooqApplicationTests" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.JooqApplication" />
+        <item itemvalue="JUnit.JooqApplicationTests" />
+        <item itemvalue="Gradle.jooq-gradle [bootRun]" />
+        <item itemvalue="Gradle.jooq-gradle [classes]" />
+        <item itemvalue="Gradle.jooq-gradle [build]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f2c41b5e-28ff-4b3a-a9b2-e32df11de889" name="Default Changelist" comment="" />
+      <created>1546868087709</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1546868087709</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="jooq-gradle_[check] - 2019.01.07 at 22h 43m 23s.xml">
+      <configuration name="jooq-gradle [check]" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="JooqApplicationTests - 2019.01.07 at 22h 46m 54s.xml">
+      <configuration name="JooqApplicationTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JooqApplicationTests - 2019.01.07 at 22h 47m 11s.xml">
+      <configuration name="JooqApplicationTests" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="348" y="17" width="1400" height="1000" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25746268" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49925372" weight="0.3290993" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3995381" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50074625" side_tool="true" weight="0.3290993" />
+      <window_info anchor="bottom" id="Build" order="10" sideWeight="0.5932836" weight="0.3290993" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49850747" weight="0.3290993" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Gradle" order="5" sideWeight="0.49884528" visible="true" weight="0.26865673" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info active="true" anchor="right" id="Coverage" order="9" sideWeight="0.5011547" side_tool="true" visible="true" weight="0.32910448" />
+    </layout>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/jooq/exceptions/ExceptionController.java</url>
+          <line>19</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>req.</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>org.apache.catalina.connector.Request,org.apache.catalina.connector.RequestFacade</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>req.getRequestURI()</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>org.apache.catalina.connector.Request,org.apache.catalina.connector.RequestFacade</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/jooq/web/RestControll.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/jooq/JooqApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/jooq/exceptions/ExceptionTranslator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/jooq/exceptions/ExceptionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#664#665#0" expanded="true" />
+            <element signature="e#694#695#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/jooq/JooqApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1288">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="gradleExecuteTaskHistory">
+    <option value="" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>com.example.jooq-gradle</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Gradle: ch.qos.logback:logback-classic:1.2.3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

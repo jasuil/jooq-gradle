@@ -6,6 +6,13 @@ package org.example.jooq.db.public_;
 
 import javax.annotation.Generated;
 
+import org.example.jooq.db.public_.tables.Comments;
+import org.example.jooq.db.public_.tables.Posts;
+import org.example.jooq.db.public_.tables.records.CommentsRecord;
+import org.example.jooq.db.public_.tables.records.PostsRecord;
+import org.jooq.Identity;
+import org.jooq.impl.AbstractKeys;
+
 
 /**
  * A class modelling foreign key relationships between tables of the <code>PUBLIC</code> 
@@ -25,6 +32,8 @@ public class Keys {
 	// IDENTITY definitions
 	// -------------------------------------------------------------------------
 
+	public static final Identity<PostsRecord, Integer> IDENTITY_POSTS = Identities0.IDENTITY_POSTS;
+	public static final Identity<CommentsRecord, Integer> IDENTITY_COMMENTS = Identities0.IDENTITY_COMMENTS;
 
 	// -------------------------------------------------------------------------
 	// UNIQUE and PRIMARY KEY definitions
@@ -39,4 +48,9 @@ public class Keys {
 	// -------------------------------------------------------------------------
 	// [#1459] distribute members to avoid static initialisers > 64kb
 	// -------------------------------------------------------------------------
+
+	private static class Identities0 extends AbstractKeys {
+		public static Identity<PostsRecord, Integer> IDENTITY_POSTS = createIdentity(Posts.POSTS, Posts.POSTS.ID);
+		public static Identity<CommentsRecord, Integer> IDENTITY_COMMENTS = createIdentity(Comments.COMMENTS, Comments.COMMENTS.ID);
+	}
 }
