@@ -1,19 +1,35 @@
 package com.example.jooq;
 
+import com.example.jooq.Dto.jasuilDto;
+import com.example.jooq.controll.rest;
+import com.example.jooq.settings.ApiConfig;
 import org.jooq.DSLContext;
 import org.jooq.exception.DataAccessException;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.test.web.servlet.MockMvc;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+
+import java.util.Locale;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class JooqApplicationTests {
 
-	 @Autowired
-	    private DSLContext dsl;
+	Logger log = LoggerFactory.getLogger(JooqApplicationTests.class);
+
+	@Autowired
+	private DSLContext dsl;
+
+
 /*
 	    @Test
 	    public void givenValidData_whenInserting_thenSucceed() {
@@ -112,5 +128,33 @@ public class JooqApplicationTests {
 	                .execute();
 	    }
 */
+
+	@Test
+	public void test2() {
+		ApiConfig apiConfig = new ApiConfig();
+		ApiConfig.MyAPI<String> a = apiConfig.myapi();
+		Call<jasuilDto> g = a.get1("jasuil");
+
+		g.enqueue(new Callback<jasuilDto>() {
+			@Override
+			public void onResponse(Call<jasuilDto> call, Response<jasuilDto> response) {
+
+				log.info("성공 : ", response.body());
+			}
+
+			@Override
+			public void onFailure(Call<jasuilDto> call, Throwable t) {
+				log.info("실패 : ", t.toString());
+			}
+		});
+	}
+
+	@Test
+	public void test3(){
+		Locale locale = new Locale("th", "TH");
+		ResourceBundleMessageSource messageSource = new ResourceBundleMessageSource();
+		log.info(messageSource.getMessage("my.msg", null, locale));
+	}
+
 }
 
