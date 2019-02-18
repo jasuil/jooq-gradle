@@ -11,6 +11,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.MessageSource;
 import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
@@ -28,7 +29,8 @@ public class JooqApplicationTests {
 
 	@Autowired
 	private DSLContext dsl;
-
+    @Autowired
+    private MessageSource messageSource;
 
 /*
 	    @Test
@@ -152,7 +154,6 @@ public class JooqApplicationTests {
 	@Test
 	public void test3(){
 		Locale locale = new Locale("th", "TH");
-		ResourceBundleMessageSource messageSource = new ResourceBundleMessageSource();
 		log.info(messageSource.getMessage("my.msg", null, locale));
 	}
 
