@@ -1,4 +1,4 @@
-package Util;
+package com.example.jooq.Util;
 
 import org.apache.fontbox.ttf.TrueTypeCollection;
 import org.apache.pdfbox.pdmodel.PDDocument;
@@ -11,13 +11,14 @@ import org.apache.pdfbox.pdmodel.font.PDType1Font;
 import org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.ResourceUtils;
 
 import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletResponse;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.URLEncoder;
 
 public class PdfCreator {
@@ -33,19 +34,20 @@ public class PdfCreator {
         // 문서 만들기
         final PDDocument doc = new PDDocument();
 
-        File file = ResourceUtils.getFile("classpath:static/back.jpg");
-
         // 배경이미지 로드
-       PDImageXObject pdImage = PDImageXObject.createFromFile( ResourceUtils.getFile("classpath:static/back.jpg").getPath(), doc);
+      // PDImageXObject pdImage = PDImageXObject.createFromFile( ResourceUtils.getFile("classpath:static/back.gif").getPath(), doc);
 
                 // 폰트 생성
         // ttf 파일 사용하기
-        //InputStream fontStream = new FileInputStream("C:/fonts/gulim.ttf");
-        //PDType0Font fontGulim = PDType0Font.load(doc, fontStream);
+        InputStream fontStream = new FileInputStream("D:/utils/fonts/NotoSansThai-hinted/NotoSansThai-Bold.ttf");
+        PDType0Font fontGulim = PDType0Font.load(doc, fontStream);
 
         // ttc 파일 사용하기
-        File fontFile = new File("C:/Windows/fonts/gulim.ttc");
-        PDType0Font fontGulim = PDType0Font.load(doc, new TrueTypeCollection(fontFile).getFontByName("Gulim"), true);
+   //     File fontFile = new File("C:/Windows/fonts/gulim.ttc");
+    //    PDType0Font fontGulim = PDType0Font.load(doc, new TrueTypeCollection(fontFile).getFontByName("Gulim"), true);
+
+//        PDFont font = PDType0Font.load(doc, new
+ //                File("/windows/fonts/KozGoPro-Regular.otf"));
 
         // 두 개의 페이지를 만든다.
         for(int i = 0; i < pageCount; i++) {
@@ -60,11 +62,12 @@ public class PdfCreator {
             PDPageContentStream contentStream = new PDPageContentStream(doc, page);
 
             // 배경 이미지  그리기
-            contentStream.drawImage(pdImage, 0, 0, 595, 842);
+       //     contentStream.drawImage(pdImage, 0, 0, 595, 842);
 
             // 글씨 쓰기
-            drawText("PDFBox 라이브러리를 사용하여", fontGulim, 18, 100, 600, contentStream);
-            drawText("PDF파일 만들기", fontGulim, 18, 100, 560, contentStream);
+            drawText("หนังสือ", fontGulim, 18, 100, 600, contentStream);
+            drawText("หนังสือ", fontGulim, 18, 100, 560, contentStream);
+
 
             // 테이블 그리기
             String[][] contents = {
@@ -104,6 +107,7 @@ public class PdfCreator {
      */
     private static void drawText(String text, PDFont font, int fontSize, float left, float bottom, PDPageContentStream contentStream) throws Exception {
         contentStream.beginText();
+ //       contentStream.setFont(PDType1Font.COURIER, fontSize);
         contentStream.setFont(font, fontSize);
         contentStream.newLineAtOffset(left, bottom);
         contentStream.showText(text);
