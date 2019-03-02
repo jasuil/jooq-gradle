@@ -3,8 +3,10 @@ package com.example.jooq;
 import com.example.jooq.Dto.jasuilDto;
 import com.example.jooq.controll.rest;
 import com.example.jooq.settings.ApiConfig;
-import org.jooq.DSLContext;
+import org.example.jooq.db.public_.tables.Posts;
+import org.jooq.*;
 import org.jooq.exception.DataAccessException;
+import org.jooq.impl.DSL;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
@@ -19,7 +21,10 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-import java.util.Locale;
+import java.util.*;
+
+import static org.example.jooq.db.public_.Tables.COMMENTS;
+import static org.example.jooq.db.public_.tables.Posts.POSTS;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -155,6 +160,8 @@ public class JooqApplicationTests {
 	public void test3(){
 		Locale locale = new Locale("th", "TH");
 		log.info(messageSource.getMessage("my.msg", null, locale));
+        List<Integer> l = dsl.selectOne().from(COMMENTS).where(DSL.value(1).eq(1)).fetch().into(Integer.class);
+        l.forEach(i -> log.info(i.toString()));
 	}
 
 }

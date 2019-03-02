@@ -6,7 +6,8 @@ package org.example.jooq.db.public_;
 
 import javax.annotation.Generated;
 
-import org.example.jooq.db.public_.tables.Jasuil;
+import org.example.jooq.db.public_.tables.Comments;
+import org.example.jooq.db.public_.tables.Posts;
 
 
 /**
@@ -23,7 +24,12 @@ import org.example.jooq.db.public_.tables.Jasuil;
 public class Tables {
 
 	/**
-	 * The table PUBLIC.JASUIL
+	 * The table PUBLIC.POSTS
 	 */
-	public static final Jasuil JASUIL = org.example.jooq.db.public_.tables.Jasuil.JASUIL;
+	public static final Posts POSTS = org.example.jooq.db.public_.tables.Posts.POSTS;
+
+	/**
+	 * The table PUBLIC.COMMENTS
+	 */
+	public static final Comments COMMENTS = org.example.jooq.db.public_.tables.Comments.COMMENTS;
 }

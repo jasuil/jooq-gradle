@@ -2,6 +2,8 @@ package com.example.jooq.controll;
 
 import com.example.jooq.Dto.jasuilDto;
 import com.example.jooq.settings.ApiConfig;
+import com.example.jooq.settings.Enums;
+import com.example.jooq.settings.userRegionCode;
 import org.apache.commons.logging.Log;
 
 
@@ -14,10 +16,7 @@ import org.springframework.context.MessageSource;
 import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -70,4 +69,8 @@ public class rest {
     }
 
 
+    @GetMapping("/region")
+    public Enums.RegionCode region(@userRegionCode Enums.RegionCode regionCode){
+        return regionCode;
+    }
 }

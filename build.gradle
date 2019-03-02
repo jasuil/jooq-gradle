@@ -31,11 +31,20 @@ repositories {
 dependencies {
 	implementation('org.springframework.boot:spring-boot-starter-jooq')
 	implementation('org.springframework.boot:spring-boot-starter-web')
+	implementation('com.squareup.retrofit2:retrofit:2.5.0')
 	runtimeOnly('org.springframework.boot:spring-boot-devtools')
 	compile('org.jooq:jooq:3.7.4')
 	runtime('com.h2database:h2')
 	testImplementation('org.springframework.boot:spring-boot-starter-test')
 	testImplementation('org.springframework.restdocs:spring-restdocs-mockmvc')
+	// https://mvnrepository.com/artifact/org.apache.pdfbox/pdfbox
+	compile group: 'org.apache.pdfbox', name: 'pdfbox', version: '2.0.13'
+	// https://mvnrepository.com/artifact/com.squareup.retrofit2/converter-jackson
+	compile group: 'com.squareup.retrofit2', name: 'converter-jackson', version: '2.5.0'
+// https://mvnrepository.com/artifact/com.squareup.okhttp3/logging-interceptor
+	compile group: 'com.squareup.okhttp3', name: 'logging-interceptor', version: '3.13.1'
+
+
 }
 
 // Use your favourite XML builder to construct the code generation configuration file
