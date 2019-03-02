@@ -2,7 +2,7 @@ package com.example.jooq.controll;
 
 import com.example.jooq.Dto.jasuilDto;
 import com.example.jooq.settings.ApiConfig;
-import com.example.jooq.settings.Enums;
+import com.example.jooq.settings.RegionCode;
 import com.example.jooq.settings.userRegionCode;
 import org.apache.commons.logging.Log;
 
@@ -70,7 +70,7 @@ public class rest {
 
 
     @GetMapping("/region")
-    public Enums.RegionCode region(@userRegionCode Enums.RegionCode regionCode){
+    public RegionCode region(@userRegionCode RegionCode regionCode){
         return regionCode;
     }
 }

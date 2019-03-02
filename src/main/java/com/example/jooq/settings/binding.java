@@ -24,6 +24,6 @@ public class binding implements HandlerMethodArgumentResolver {
         HttpServletRequest request = (HttpServletRequest) webRequest.getNativeRequest();
 
         String regionCode =request.getParameter(REGION);
-        return Enums.RegionCode.valueOf(regionCode);
+        return RegionCode.valueOf(regionCode);
     }
 }
