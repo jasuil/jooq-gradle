@@ -1,12 +1,19 @@
 package com.example.jooq;
 
-import org.jooq.DSLContext;
-import org.jooq.exception.DataAccessException;
+import org.example.jooq.db.public_.tables.records.PostsRecord;
+import org.jooq.*;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
+
+import static org.example.jooq.db.public_.Tables.POSTS;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -112,5 +119,23 @@ public class JooqApplicationTests {
 	                .execute();
 	    }
 */
+
+
+	@Test
+	public void testStream(){
+		List<String> list = Arrays.asList("jasuil", "1212");
+		Optional<List<String>> opList =  Optional.ofNullable(list);
+
+		list.forEach(e->System.out.println(e));
+
+		List<TableField<PostsRecord, String>> fields1 = Arrays.asList(POSTS.CONTENT);
+		List<TableField<PostsRecord, String>> fields2 = new ArrayList<>();
+		fields2.addAll(fields1);
+		fields2.add(POSTS.TITLE);
+
+
+		Result<Record> r = dsl.select(fields2).from(POSTS).fetch();
+	}
+
 }
 

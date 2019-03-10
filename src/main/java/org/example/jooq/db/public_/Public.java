@@ -10,7 +10,9 @@ import java.util.List;
 
 import javax.annotation.Generated;
 
-import org.example.jooq.db.public_.tables.Jasuil;
+import org.example.jooq.db.public_.tables.Comments;
+import org.example.jooq.db.public_.tables.Posts;
+import org.jooq.Sequence;
 import org.jooq.Table;
 import org.jooq.impl.SchemaImpl;
 
@@ -28,7 +30,7 @@ import org.jooq.impl.SchemaImpl;
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class Public extends SchemaImpl {
 
-	private static final long serialVersionUID = -35220586;
+	private static final long serialVersionUID = 29741762;
 
 	/**
 	 * The reference instance of <code>PUBLIC</code>
@@ -43,6 +45,19 @@ public class Public extends SchemaImpl {
 	}
 
 	@Override
+	public final List<Sequence<?>> getSequences() {
+		List result = new ArrayList();
+		result.addAll(getSequences0());
+		return result;
+	}
+
+	private final List<Sequence<?>> getSequences0() {
+		return Arrays.<Sequence<?>>asList(
+			Sequences.SYSTEM_SEQUENCE_4FF3E697_19EA_4D15_91FA_CCC0F22638A4,
+			Sequences.SYSTEM_SEQUENCE_F2DF3874_4D5A_462E_BEBA_EB53431B4D2D);
+	}
+
+	@Override
 	public final List<Table<?>> getTables() {
 		List result = new ArrayList();
 		result.addAll(getTables0());
@@ -51,6 +66,7 @@ public class Public extends SchemaImpl {
 
 	private final List<Table<?>> getTables0() {
 		return Arrays.<Table<?>>asList(
-			Jasuil.JASUIL);
+			Posts.POSTS,
+			Comments.COMMENTS);
 	}
 }
