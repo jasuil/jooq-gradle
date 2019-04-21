@@ -1,4 +1,4 @@
-# jooq-gradle and spark
+# jooq-gradle and apache-spark
 jooq-gradle => very simple start project with h2database
 
 how to customize
