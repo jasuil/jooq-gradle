@@ -1,74 +1,71 @@
-buildscript {
-	ext {
-		springBootVersion = '2.1.1.RELEASE'
-	}
-	repositories {
-	  	mavenLocal()
-		mavenCentral()
-	}
-	dependencies {
-		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
-		classpath("org.jooq:jooq-codegen:3.7.4")
-		classpath("com.h2database:h2:1.4.177")
-	}
+plugins {
+	id 'org.springframework.boot' version '2.1.4.RELEASE'
+	id 'java'
+	id 'nu.studer.jooq' version '3.0.3'
 }
 
-apply plugin: 'java'
-apply plugin: 'eclipse'
-apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = 1.8
+sourceCompatibility = '1.8'
 
 repositories {
-	mavenLocal()
 	mavenCentral()
 }
 
-
 dependencies {
-	implementation('org.springframework.boot:spring-boot-starter-jooq')
-	implementation('org.springframework.boot:spring-boot-starter-web')
-	runtimeOnly('org.springframework.boot:spring-boot-devtools')
-	compile('org.jooq:jooq:3.7.4')
-	runtime('com.h2database:h2')
-	testImplementation('org.springframework.boot:spring-boot-starter-test')
-	testImplementation('org.springframework.restdocs:spring-restdocs-mockmvc')
+	implementation 'org.springframework.boot:spring-boot-starter-jooq'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	compile "org.apache.spark:spark-core_2.11:2.4.1"
+	compile "org.apache.spark:spark-sql_2.11:2.4.1"
+	compile "org.apache.spark:spark-mllib_2.11:2.4.1"
+	compile 'com.google.guava:guava:14.0.1'
+	runtime 'com.h2database:h2'
+	jooqRuntime 'com.h2database:h2:1.4.199'
+}
+configurations.all {
+	exclude module: 'slf4j-log4j12'
+	exclude module: 'guava:16.0.1'
 }
 
-// Use your favourite XML builder to construct the code generation configuration file
-// ----------------------------------------------------------------------------------
-def writer = new StringWriter()
-def xml = new groovy.xml.MarkupBuilder(writer)
-.configuration('xmlns': 'http://www.jooq.org/xsd/jooq-codegen-3.7.0.xsd') {
-    jdbc() {
-        driver('org.h2.Driver')
-        url('jdbc:h2:tcp://localhost/~/jooq')
-        user('jasuil')
-        password('')
-        
-    }
-    generator() {
-        database() {
-        }
-
-        // Watch out for this caveat when using MarkupBuilder with "reserved names"
-        // - https://github.com/jOOQ/jOOQ/issues/4797
-        // - http://stackoverflow.com/a/11389034/521799
-        // - https://groups.google.com/forum/#!topic/jooq-user/wi4S9rRxk4A
-        generate([:]) {
-            pojos true
-            daos true
-        }
-        target() {
-            packageName('org.example.jooq.db')
-            directory('src/main/java')
-        }
-    }
+jooq {
+	version = '3.11.10'
+	edition = 'OSS'
+	sample(sourceSets.main) {
+		jdbc {
+			driver = 'org.h2.Driver'
+			url = 'jdbc:h2:tcp://localhost/~/jooq'
+			user = 'jasuil'
+			password = ''
+		}
+		generator {
+			name = 'org.jooq.codegen.DefaultGenerator'
+			database {
+				name = 'org.jooq.meta.h2.H2Database'
+				includes = '.*'
+				excludes = ''
+			}
+			target {
+				packageName = 'com.example.schema'
+				directory = 'src/main/java'
+			}
+		}
+	}
 }
 
-// Run the code generator
-// ----------------------
-org.jooq.util.GenerationTool.generate(writer.toString())
+tasks.generateSampleJooqSchemaSource.with {
+	def out = new ByteArrayOutputStream()
+	javaExecSpec = { JavaExecSpec s ->
+		s.standardOutput = out
+		s.errorOutput = out
+		s.ignoreExitValue = true
+		s.jvmArgs '-Xmx512M'
+	}
+	execResultHandler = { ExecResult r ->
+		if (r.exitValue != 0) {
+			throw new RuntimeException('jOOQ source code generation failed:\n\n' + out.toString())
+		}
+	}
+}

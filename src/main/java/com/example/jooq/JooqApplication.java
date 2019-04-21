@@ -8,9 +8,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableTransactionManagement
 public class JooqApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(JooqApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(JooqApplication.class, args);
+    }
 
 }
-

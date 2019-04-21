@@ -2,6 +2,7 @@ package com.example.jooq.settings;
 
 import javax.sql.DataSource;
 
+import com.example.jooq.exceptions.ExceptionListener;
 import org.jooq.impl.DataSourceConnectionProvider;
 import org.jooq.impl.DefaultConfiguration;
 import org.jooq.impl.DefaultDSLContext;
@@ -11,30 +12,28 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.datasource.TransactionAwareDataSourceProxy;
 
-import com.example.jooq.exceptions.ExceptionTranslator;
-
 @Configuration
 public class InitialConfiguration {
     // Other declarations
-	  @Autowired
-	    private DataSource dataSource;
+    @Autowired
+    private DataSource dataSource;
 
-	    @Bean
-	    public DataSourceConnectionProvider connectionProvider() {
-	        return new DataSourceConnectionProvider(new TransactionAwareDataSourceProxy(dataSource));
-	    }
+    @Bean
+    public DataSourceConnectionProvider connectionProvider() {
+        return new DataSourceConnectionProvider(new TransactionAwareDataSourceProxy(dataSource));
+    }
 
-	    @Bean
-	    public DefaultDSLContext dsl() {
-	        return new DefaultDSLContext(configuration());
-	    }
+    @Bean
+    public DefaultDSLContext dsl() {
+        return new DefaultDSLContext(configuration());
+    }
 
-	    public DefaultConfiguration configuration() {
-	        DefaultConfiguration jooqConfiguration = new DefaultConfiguration();
+    public DefaultConfiguration configuration() {
+        DefaultConfiguration jooqConfiguration = new DefaultConfiguration();
 
-	        jooqConfiguration.set(connectionProvider());
-	        jooqConfiguration.set(new DefaultExecuteListenerProvider(new ExceptionTranslator()));
+        jooqConfiguration.set(connectionProvider());
+        jooqConfiguration.set(new DefaultExecuteListenerProvider(new ExceptionListener()));
 
-	        return jooqConfiguration;
-	    }
+        return jooqConfiguration;
+    }
 }
