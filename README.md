@@ -1,4 +1,4 @@
-# jooq-gradle
+# jooq-gradle and spark
 jooq-gradle => very simple start project with h2database
 
 how to customize
@@ -15,3 +15,7 @@ how to customize
 3. create db schema
 4. in console, gradle build
 5. you find out new package, org.example.jooq.db
+
+
+how to use spark?
+in src/test package, find out spark.java, spark2.java
